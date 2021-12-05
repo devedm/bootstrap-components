@@ -1,24 +1,18 @@
-const cardArray = [
-    {
-        id: 'accordion',
-        img: './asserts/img/example1.jpg',
-        title: '1. Accordion',
-        description: 'This component help you create a button that expands and collapse when is clicked',
-        link: 'accordion.html'
-    }
-];
+// Alert Scripts
 
+var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+var alertTrigger = document.getElementById('liveAlertBtn')
 
-    
+function alert(message, type) {
+  var wrapper = document.createElement('div')
+  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
 
-function generateCard() {
-    for (var i = 0; i < cardArray.length; i++) {
-        var card = document.createElement('img');
-        card.setAttribute('src',cardArray[0].img);
-        card.setAttribute('data-id',i);
-        document.getElementById('card-container').appendChild(card);
-    }
+  alertPlaceholder.append(wrapper)
 }
 
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', function () {
+    alert('Nice, you triggered this alert message!', 'success')
+  })
+}
 
-generateCard();
