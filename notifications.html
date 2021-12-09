@@ -21,7 +21,7 @@
     </header>
 
     <div class="container">
-        <div class="pt-5">
+        <div class="mt-5">
             <h1 class="fs-1">3. Notifications</h1>
             <p class="fs-4">This button creates an alert message on </p>
         </div>
@@ -29,13 +29,42 @@
 
         </div>
         <div class="pt-5">
-            <h1 class="fs-2">3.1 Badge</h1>
-            <p class="fs-5">This button creates an alert message on </p>
-        </div>
+            <div class="container">
+                <h1 class="fs-2">3.1 Badge</h1>
+                <p class="fs-5">This component create a small notification box inside the button </p>
+                <button type="button" class="btn btn-success">
+                    Posts <span class="badge bg-danger">2</span>
+                </button>
+                <button type="button" class="btn btn-info">
+                    Messages <span class="badge bg-dark">16</span>
+                  </button>
+            </div>
+            <div class="container mt-3">
 
-        <div class="pt-5">
-            <h1 class="fs-2">3.1 Spinners</h1>
-            <p class="fs-5">This button creates an alert message on </p>
+                <p class="fs-5">Can create an notification box out of the component</p>
+                <button type="button" class="btn btn-dark position-relative">
+                    Items
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      2
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+            <div class="container mt-5">
+                <h1 class="fs-2">3.2 Spinners</h1>
+                <p class="fs-5">This usefull spiner provide many colors and designs and can be placed on buttons</p>
+                <div class="d-flex flex-row justify-content-around">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <button class="btn btn-dark" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span class="visually-hidden">Loading...</span>
+                      </button>
+                </div>
+            </div>
         </div>
     </div>
 

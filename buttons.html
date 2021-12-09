@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Buttons</title>
 </head>
 <body>
 
@@ -22,11 +22,61 @@
 
     <div class="container">
         <div class="pt-5">
-            <h1 class="fs-1">1. Accordion</h1>
-            <p class="fs-4">This button creates an alert message on </p>
+            <h1 class="fs-1">5. Button</h1>
+            <p class="fs-4">Buttons with diferent colors and designs</p>
         </div>
-        <div class="container">
+        <div class="containers">
+            <div class="container mt-3">
+                <h1 class="fs-2">5.1. Button</h1>
+                <p class="fs-5">Colored buttons with many colors</p>
 
+                <button type="button" class="btn btn-primary">Agree</button>
+                <button type="button" class="btn btn-secundary">Decline</button>
+
+                <button type="button" class="btn btn-info">Agree</button>
+                <button type="button" class="btn btn-dark">Decline</button>
+
+                <button type="button" class="btn btn-danger">Agree</button>
+                <button type="button" class="btn btn-warning">Decline</button>
+            </div>
+            <div class="container mt-3">
+                <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+                <button type="button" class="btn btn-outline-primary btn-lg">Display</button>
+                <button type="button" class="btn btn-outline-primary">Payments</button>
+                <button type="button" class="btn btn-outline-primary btn-sm">Account</button>
+                <button type="button" class="btn btn-outline-primary" disabled>Settings</button>
+            </div>
+        </div>
+        
+        <div class="container mt-5">
+            <div class="container mt-3">
+                <h1 class="fs-2">5.2. Button Groups</h1>
+                <p class="fs-5">Group of buttons with diferent or consistent colors</p>
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-danger">America</button>
+                    <button type="button" class="btn btn-info">Europe</button>
+                    <button type="button" class="btn btn-success">Asia</button>
+                    <button type="button" class="btn btn-warning">Africa</button>
+                    <button type="button" class="btn btn-dark">Australia</button>
+                    <button type="button" class="btn btn-secundary">Antarctica</button>
+                </div>
+
+            </div>
+            
+            <div class="container mt-3">
+                <p class="fs-5">Radio button style with multiple or single selection</p>
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-info" for="btnradio1">10 items</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-info" for="btnradio2">20 items</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-info" for="btnradio3">30 items</label>
+                  </div>
+            </div>
         </div>
         
     </div>
