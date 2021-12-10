@@ -22,11 +22,63 @@
 
     <div class="container mt-5">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
-        </div>
-        <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <h1 class="fs-1">22. Forms</h1>
+            <p class="fs-4">This contains a input, label, dropdowns, checkboxs and other elements to create usefull forms</p>
+            <div class="card container">
+                <h1 class="fs-2 text-center mt-3 mb-3">Registration form</h1>
+                <h2 class="fs-3">Personal information</h2>
+                <div class="container">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">First Name</span>
+                        <input type="text" class="form-control" placeholder="First Name" aria-label="Username">
+                        <span class="input-group-text">Last Name</span>
+                        <input type="text" class="form-control" placeholder="Last Name" aria-label="Server">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Username</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon2">Email</span>
+                        <input type="text" class="form-control" placeholder="Email address" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon3">Again Email</span>
+                        <input type="text" class="form-control" placeholder="Email address" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon4">Password</span>
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon4">Confirm Password</span>
+                        <input type="password" class="form-control" placeholder="Confirm Password" aria-label="Username" aria-describedby="basic-addon1">
+                        <div id="passwordHelpBlock" class="form-text">
+                            Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                        </div>
+                    </div>
+
+                    <select class="form-select w-25 mb-3" aria-label="Default select example">
+                        <option selected>Age</option>
+                        <option value="1">1 - 16</option>
+                        <option value="2">17 - 32</option>
+                        <option value="3">33 - 64</option>
+                    </select>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I agree to <b>our</b> terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                </div>
+                
+                
+            </div>
         </div>
         
     </div>
