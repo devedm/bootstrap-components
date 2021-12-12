@@ -50,10 +50,78 @@
     <div class="container mt-5">
         <div class="container mt-3">
             <h1 class="fs-1">11. Modal</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
+            <p class="fs-4">This component is like a card that can be triggered by a button and will fade the background to be on top of all</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Check my cart
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                                <img src="./asserts/img/cart-cam.jpg" class="img-fluid img-thumbnail" width="50" height="50"> 
+                                <a class="text-center">Fujifilm Instax Mini 11 - Cámara instantánea</a>
+                                <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                            </li>
+                            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                                <img src="./asserts/img/cart-film.jpg" class="img-fluid img-thumbnail" width="50" height="50"> 
+                                <a class="text-center">Fujifilm Instax - Mini-paquete de película instantánea</a>
+                                <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                            </li>
+                            <li class="list-group-item d-flex flex-row justify-content-between align-items-center">
+                                <img src="./asserts/img/cart-print.jpg" class="img-fluid img-thumbnail" width="50" height="50"> 
+                                <a class="text-center">Fujifilm Impresora Instax Mini Link Smartphone</a>
+                                <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                            </li>
+                
+                          </ul>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <p class="fs-5">The modal body can include forms</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+            <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
         
     </div>
