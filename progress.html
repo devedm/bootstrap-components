@@ -6,27 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Progess Bar</title>
 </head>
 <body>
 
     <header>
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-sm justify-content-center">
-            <a class="navbar-brand" href="index.html">Home</a>
-        </div>
-      </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="btn btn-cark dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Components
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark float-end" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="accordion.html">1. Accordion</a></li>
+                <li><a class="dropdown-item" href="alerts.html">2. Alert</a></li>
+                <li><a class="dropdown-item" href="notifications.html">3. Notifications</a></li>
+                <li><a class="dropdown-item" href="information.html">4. Information</a></li>
+                <li><a class="dropdown-item" href="buttons.html">5. Buttons</a></li>
+                <li><a class="dropdown-item" href="card.html">6. Card</a></li>
+                <li><a class="dropdown-item" href="carousel.html">7. Carousel</a></li>
+                <li><a class="dropdown-item" href="collapse.html">8. Collapse</a></li>
+                <li><a class="dropdown-item" href="dropdowns.html">9. Dropdowns</a></li>
+                <li><a class="dropdown-item" href="listgroup.html">10. List group</a></li>
+                <li><a class="dropdown-item" href="modal.html">11. Modal</a></li>
+                <li><a class="dropdown-item" href="navstabs.html">12. Navs & tabs</a></li>
+                <li><a class="dropdown-item" href="navbar.html">13. Navbar</a></li>
+                <li><a class="dropdown-item" href="offcanvas.html">14. Offcanvas</a></li>
+                <li><a class="dropdown-item" href="placeholders.html">15. Placeholders</a></li>
+                <li><a class="dropdown-item" href="popovers.html">16. Popovers</a></li>
+                <li><a class="dropdown-item" href="progress.html">17. Progress</a></li>
+                <li><a class="dropdown-item" href="scrollspy.html">18. Scrollspy</a></li>
+                <li><a class="dropdown-item" href="toasts.html">19. Toasts</a></li>
+                <li><a class="dropdown-item" href="tooltips.html">20. Tooltips</a></li>
+                <li><a class="dropdown-item" href="tables.html">21. Tables</a></li>
+                <li><a class="dropdown-item" href="forms.html">22. Forms</a></li>
+            </ul>
+            <div class="container-sm justify-content-center">
+                <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+        </nav>
 
     </header>
 
-    <div class="container mt-5">
+    <div class="container mt-5 clearfix">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
+            <h1 class="fs-1">17. Progess Bar</h1>
+            <p class="fs-4">Progress bars with diferent colors and animated</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </div>
         <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <p class="fs-5">The bars can have text, be striped and have animations</p>
+
+            <div class="progress mt-3">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+
+            <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="progress mt-3">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+            </div>
         </div>
         
     </div>
