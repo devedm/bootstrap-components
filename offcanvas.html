@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Offcanvas</title>
 </head>
 <body>
 
@@ -49,11 +49,91 @@
 
     <div class="container mt-5">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
+            <h1 class="fs-1">14. Offcanvas</h1>
+            <p class="fs-4">This component trigger a isolated view on a side of the screen</p>
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                Left
+            </a>
+            
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                Down
+            </button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                Right
+            </button>
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Hilton San Jose La Sabana</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <img src="./asserts/img/hilton.jpg" class="img-thumbnail">
+                        Set in San José, 200 m from Estadio Nacional de Costa Rica, Hilton San Jose La Sabana offers accommodations with a restaurant, private parking, a fitness center and a bar. Boasting family rooms, this property also provides guests with a terrace. The accommodations provides a 24-hour front desk, room service and currency exchange for guests.
+                        The hotel will provide guests with air-conditioned rooms offering a desk, a coffee machine, a fridge, a safety deposit box, a flat-screen TV and a private bathroom with a shower. At Hilton San Jose La Sabana all rooms have bed linen and towels.
+                    </div>
+                    <button class="btn btn-primary">Reserve now</button>
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Studio Hotel Boutique</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <img src="./asserts/img/studio.jpg" class="img-thumbnail">
+                    Featuring a rooftop swimming pool, Studio Hotel offers rooms with free high-speed WiFi and views of the surrounding Central Valley. Set in the center of Santa Ana, this eco-friendly hotel has an à la carte restaurant.
+                    Each air-conditioned room at the Studio Hotel has simple, attractive décor. All rooms have an iPod docking station, and tea and coffee making facilities. Solar panels heat the water.
+                    Guests can enjoy a buffet breakfast in the Studio’s restaurant or on the terrace. A range of international cuisine is available for dinner.
+                    The center of San José is 7.5 mi from the hotel, while the nearby CR-27 Próspero Fernández Motorway connects guests to Caldera and the coast within 1 hour. Forum I Business Center is 751 m away, and you can drive to the airport in 15 minutes.
+                    <button class="btn btn-primary">Reserve now</button>
+
+                </div>
+            </div>
+
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Wyndham Garden San Jose Escazu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small d-flex flex-row align-items-center">
+                    <img src="./asserts/img/windham.jpg" class="img-thumbnail m-4" width="200px" height="200px">
+
+                    Featuring an indoor swimming pool, a terrace, hot tub and free high speed WiFi in all areas, this hotel is 5 minutes’ drive from the La Sabana Metropolitan Park and Multiplaza Mall.
+                    The rooms and suites offer modern décor, air conditioning, wardrobe, laptop safe, mini-bar and flat-screen cable TV. The bathrooms come with shower, hairdryer and free toiletries.                    
+                    El Cortijo restaurant serves international cuisine for breakfast, lunch and dinner. There is also room service available until 22:00 hours. This property offers transportation services to nearby malls and corporate centers during Monday to Friday in an established scheduled.                  
+                    Wyndham Garden San Jose Escazu, Costa Rica also features business center, a gym, an on-site minimarket and gift shop, all with 24-hour service. The guests can be assisted to reach local travel agents to arrange tours in all Costa Rica.
+                    <button class="btn btn-primary">Reserve now</button>
+
+                </div>
+            </div>
+
         </div>
         <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <p class="fs-5">The offcanvas can also be triggered without that dark color on the rest of the screen</p>
+            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                View Hotel
+            </button>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Radisson Hotel San Jose</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <p>
+                        <img src="./asserts/img/raddison.jpg" class="img-thumbnail">
+                        This stylish hotel offers an outdoor swimming pool, an indoor heated pool, and a conference center. Each spacious room includes free Wi-Fi.
+                        The Radisson Hotel San Jose Costa Rica is located in central San José, 801 m from Central Avenue. Free 24-hour secure parking is offered on site.
+                        You can relax in the hot tub and sauna at the Radisson Hotel San Jose, there is also a gym.
+                        The spacious rooms feature classic-style décor and elegant carved wood furniture. Each room offers a coffee maker and a stylish bathroom with toiletries and a hairdryer.
+                        The Radisson’s Acuarelas restaurant serves fresh local and international dishes, while Café Tropical offers a varied buffet breakfast. Room service and Medical assistance available 24 hours a day.
+                    </p>
+                    <button class="btn btn-primary">Reserve now</button>
+
+                </div>
+            </div>
         </div>
         
     </div>

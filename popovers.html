@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Popovers</title>
 </head>
 <body>
 
@@ -49,15 +49,21 @@
 
     <div class="container mt-5">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
+            <h1 class="fs-1">16. Popovers</h1>
             <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
         </div>
         <div class="container mt-3">
             <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
         </div>
         
     </div>
-
-    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
 </body>
 </html>

@@ -50,23 +50,31 @@
     <div class="container mt-5">
         <div class="container mt-3">
             <h1 class="fs-1">8. Collapse</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
+            <p class="fs-4">This component have an element that is visible when activated by a button, also shrinks and grows when the element is or not visible</p>
             <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Link with href
+                  What is a Pie?
                 </a>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Button with data-bs-target
-                </button>
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  “[…] Let’s talk about cheesecakes,” said food writer Brian Geiger. “Generally cheesecakes are cylindrical, 4-6″ tall or more, have a baked custard center, and a crumb crust. With a minor change in appearance, any pastry that is a crumb crust filled with custard and baked, in my mind, is a pie.”
                 </div>
               </div>
         </div>
         <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <p class="fs-5">The component can be horizontal with .collapse-horizontal</p>
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Red Velvet
+              </button>
+            </p>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 300px;">
+                  Red velvet is made with cocoa powder, vinegar and buttermilk. The chemical reaction between these ingredients help give the cake a deep maroon color that is often enhanced by extra food coloring                </div>
+              </div>
+            </div>
         </div>
         
     </div>
