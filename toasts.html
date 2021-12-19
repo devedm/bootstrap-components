@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Toasts</title>
 </head>
 <body>
 
@@ -49,15 +49,41 @@
 
     <div class="container mt-5">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
-        </div>
-        <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <h1 class="fs-1">19. Toasts</h1>
+            <p class="fs-4">This element can trigger a small notification.</p>
+            <div>
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Show messages</button>
+
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                        <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <rect width="100%" height="100%" fill="#007aff"></rect>
+                        </svg>
+                    <strong class="me-auto">Eddy Mena</strong>
+                    <small>5 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                        Hi, how are you?
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
         
     </div>
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+        toastTrigger.addEventListener('click', function () {
+            var toast = new bootstrap.Toast(toastLiveExample)
 
+            toast.show()
+        })
+}
+    </script>
     <script src="./js/bootstrap.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Tooltips</title>
 </head>
 <body>
 
@@ -49,15 +49,33 @@
 
     <div class="container mt-5">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
-        </div>
-        <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <h1 class="fs-1">20. Tooltips</h1>
+            <p class="fs-4">This component adds a small text bubble with details when the button is hover.</p>
+            <div class="container">
+                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="top" title="Used to move the selected layer">
+                    Move
+                </button>
+                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="right" title="Will cut the visible area">
+                    Crop
+                </button>
+                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="bottom" title="This will paint with the selected color the whole selected area">
+                    Bucket
+                </button>
+                <button type="button" class="btn btn-info" data-bs-toggle="tooltip" data-bs-placement="left" title="This creates a new selection">
+                    Selection
+                </button>
+            </div>
+            
         </div>
         
     </div>
-
-    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    
 </body>
 </html>

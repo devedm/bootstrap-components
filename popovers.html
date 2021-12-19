@@ -50,11 +50,16 @@
     <div class="container mt-5">
         <div class="container mt-3">
             <h1 class="fs-1">16. Popovers</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
-            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+            <p class="fs-4">This component create a small box with tittle and text right next to the button.</p>
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Gecko" data-bs-content="Most geckos are nocturnal, hiding during the day and foraging for insects at night. They can be seen climbing walls of houses and other buildings in search of insects attracted to porch lights, and are immediately recognisable by their characteristic chirping.">
+                Click me!
+            </button>
         </div>
         <div class="container mt-3">
-            <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+            <p class="fs-5">A disabled button can still be triggered to pop</p>
+            <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="I popped even disabled">
+                <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+            </span>
         </div>
         
     </div>
