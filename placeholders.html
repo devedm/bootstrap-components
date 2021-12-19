@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Accordion</title>
+    <title>Placeholders</title>
 </head>
 <body>
 
@@ -49,15 +49,49 @@
 
     <div class="container mt-5">
         <div class="container mt-3">
-            <h1 class="fs-1">7. Carousel</h1>
-            <p class="fs-4">This contains a group of images that can be switched but always shows only 1</p>
+            <h1 class="fs-1">15. Placeholders</h1>
+            <p class="fs-4">Component that show the element is loading, like a spiner but for another type of elemts.</p>
+            <div class="d-flex flex-row justify-content-around">
+                <div class="card" style="width: 18rem;">
+                    <img src="./asserts/img/example1.jpg" class="card-img-top" alt="...">
+                
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="card" aria-hidden="true">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#868e96"></rect>
+                    </svg>
+                    <div class="card-body">
+                      <h5 class="card-title placeholder-glow">
+                        <span class="placeholder col-6"></span>
+                      </h5>
+                      <p class="card-text placeholder-glow">
+                        <span class="placeholder col-2"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-4"></span>
+                        <span class="placeholder col-6"></span>
+                        <span class="placeholder col-8"></span>
+                      </p>
+                      <a href="#" tabindex="-1" class="btn btn-dark disabled placeholder col-6"></a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="container mt-3">
             <p class="fs-5"><b>Outlined</b> buttons to create quick option menu with 3 diferent sizes and disabled mode</p>
+
         </div>
+    
         
     </div>
+ 
 
-    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 </html>
